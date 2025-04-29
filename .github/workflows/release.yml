@@ -106,7 +106,7 @@ jobs:
           And use it like this:
           ```
           java -javaagent:opentelemetry-javaagent.jar \
-            -Dotel.javaagent.extensions=${{ env.PRIMARY_MAVEN_MODULE }})-${{ steps.version.outputs.release }}.jar
+            -Dotel.javaagent.extensions=${{ env.PRIMARY_MAVEN_MODULE }}-${{ steps.version.outputs.release }}.jar
             -jar myapp.jar
           ```
 
