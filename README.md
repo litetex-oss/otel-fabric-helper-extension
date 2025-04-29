@@ -1,7 +1,7 @@
 [![Latest version](https://img.shields.io/maven-central/v/net.litetex/otel-fabric-helper-extension?logo=apache%20maven)](https://mvnrepository.com/artifact/net.litetex/otel-fabric-helper-extension)
 [![Build](https://img.shields.io/github/actions/workflow/status/litetex-oss/otel-fabric-helper-extension/check-build.yml?branch=develop)](https://github.com/litetex-oss/otel-fabric-helper-extension/actions/workflows/check-build.yml?query=branch%3Adevelop)
 
-# OpenTelemetry Agent Helper Extension for Fabric-Loader
+# OpenTelemetry Agent Helper Extension for Fabric
 
 This [OpenTelemetry Agent extension](https://opentelemetry.io/docs/zero-code/java/agent/extensions/) helps instrumenting [FabricMC](https://github.com/FabricMC/fabric-loader).
 
