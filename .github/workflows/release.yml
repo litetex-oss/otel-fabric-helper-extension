@@ -101,7 +101,7 @@ jobs:
           ## Installation
           Download the JAR from
           * [Maven Central](https://repo.maven.apache.org/maven2/net/litetex/${{ env.PRIMARY_MAVEN_MODULE }})
-          * or form the assets below
+          * or from the assets below
 
           And use it like this:
           ```
