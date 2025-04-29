@@ -4,7 +4,7 @@
   "packageRules": [
     {
       "description": "Ignore project internal dependencies",
-      "packagePattern": "^net.litetex:template-placeholder",
+      "packagePattern": "^net.litetex:otel-fabric-helper-extension",
       "datasources": [
         "maven"
       ],
