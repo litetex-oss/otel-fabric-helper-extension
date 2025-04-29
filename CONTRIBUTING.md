@@ -35,13 +35,13 @@ You should have the following things installed:
 ## Releasing [![Build](https://img.shields.io/github/actions/workflow/status/litetex-oss/otel-fabric-helper-extension/release.yml?branch=master)](https://github.com/litetex-oss/otel-fabric-helper-extension/actions/workflows/release.yml)
 
 Before releasing:
-* Consider doing a [test-deployment](https://github.com/litetex-oss/otel-fabric-helper-extension/actions/workflows/test-deploy.yml?query=branch%3Adevelop) before actually releasing.
+* Consider doing a [test-deployment](https://github.com/litetex-oss/otel-fabric-helper-extension/actions/workflows/test-deploy.yml?query=branch%3Adev) before actually releasing.
 * Check the [changelog](CHANGELOG.md)
 
-If the ``develop`` is ready for release, create a pull request to the ``master``-Branch and merge the changes
+If the ``dev`` is ready for release, create a pull request to the ``master``-Branch and merge the changes
 
 When the release is finished do the following:
-* Merge the auto-generated PR (with the incremented version number) back into the ``develop``
+* Merge the auto-generated PR (with the incremented version number) back into the ``dev``
 
 ### Release failures
 
@@ -55,13 +55,13 @@ In case 1 we can re-release the existing version,<br/>in case 2 we have to relea
 
 1. Delete the release on GitHub
 2. Delete the release Git tag from the repo (locally and remote!)
-3. Delete the ``master``-Branch and re-create it from the ``develop`` branch (or reset it to the state before the release-workflow commits have been done)
+3. Delete the ``master``-Branch and re-create it from the ``dev`` branch (or reset it to the state before the release-workflow commits have been done)
     * This requires __temporarily__ removing the branch protection
     * Once this was done a new release is triggered immediately!
 
 #### How-to: Releasing a new version
 
-1. Merge the ``master`` branch back into ``develop`` (or another temporary branch)
+1. Merge the ``master`` branch back into ``dev`` (or another temporary branch)
 2. Make sure all master branch versions are prepared for a new release<br/>e.g. if the broken release was ``1.0.0`` the version should now be at ``1.0.1-SNAPSHOT`` - the ``SNAPSHOT`` is important for the workflow!
 3. Mark the broken release as broken e.g. inside the Changelog, GitHub Release page, etc.<br/>
 You can use something like this:
