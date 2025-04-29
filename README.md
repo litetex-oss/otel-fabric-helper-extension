@@ -5,8 +5,9 @@
 
 This [OpenTelemetry Agent extension](https://opentelemetry.io/docs/zero-code/java/agent/extensions/) helps instrumenting [FabricMC](https://github.com/FabricMC/fabric-loader).
 
-The following instrumentations are applied:
+The following helpers are currently applied:
 * KnotClassLoader correctly detects changes on its classpath
+    * This ensure that the ``opentelemtry-api`` is correctly injected when a mod is loaded
 
 The project is based on [this example](https://github.com/open-telemetry/opentelemetry-java-instrumentation/tree/main/examples/extension).
 
