@@ -12,7 +12,15 @@ The following helpers are currently applied:
 The project is based on [this example](https://github.com/open-telemetry/opentelemetry-java-instrumentation/tree/main/examples/extension).
 
 ## Installation
+
 [Installation guide for the latest release](https://github.com/litetex-oss/otel-fabric-helper-extension/releases/latest#Installation)
+
+### Quick setup
+```
+java -javaagent:opentelemetry-javaagent.jar \
+  -Dotel.javaagent.extensions=otel-fabric-helper-extension.jar
+  -jar myapp.jar
+```
 
 ## Contributing
 See the [contributing guide](./CONTRIBUTING.md) for detailed instructions on how to get started with our project.
