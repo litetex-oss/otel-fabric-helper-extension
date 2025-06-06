@@ -5,13 +5,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>net.litetex</groupId>
-	<artifactId>template-placeholder-root</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<artifactId>otel-fabric-helper-extension-root</artifactId>
+	<version>1.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<modules>
-		<module>template-placeholder</module>
-		<module>template-placeholder-demo</module>
+		<module>otel-fabric-helper-extension</module>
 	</modules>
 
 	<properties>
@@ -21,8 +20,8 @@
 
 	<licenses>
 		<license>
-			<name>Apache-2.0</name>
-			<url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<name>LGPL-3.0-or-later</name>
+			<url>https://www.gnu.org/licenses/lgpl+gpl-3.0.txt</url>
 			<distribution>repo</distribution>
 		</license>
 	</licenses>
