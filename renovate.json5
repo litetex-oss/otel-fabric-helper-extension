@@ -19,6 +19,16 @@
         "maven"
       ],
       "groupName": "net.sourceforge.pmd"
+    },
+    {
+      "description": "Allow unstable versions for opentelemetry-instrumentation-bom-alpha",
+      "matchPackagePatterns": [
+        "^io.opentelemetry.instrumentation:net.sourceforge.pmd:opentelemetry-instrumentation-bom-alpha"
+      ],
+      "datasources": [
+        "maven"
+      ],
+      "ignoreUnstable": false
     }
   ]
 }
