@@ -34,7 +34,7 @@ jobs:
         distribution: [temurin]
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
       
     - name: Set up JDK
       uses: actions/setup-java@v4
@@ -75,7 +75,7 @@ jobs:
         distribution: [temurin]
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
       
     - name: Set up JDK
       uses: actions/setup-java@v4
@@ -98,7 +98,7 @@ jobs:
         distribution: [temurin]
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
 
     - name: Set up JDK
       uses: actions/setup-java@v4
