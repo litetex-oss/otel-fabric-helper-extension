@@ -29,6 +29,8 @@
       "datasources": [
         "maven"
       ],
+      "matchCurrentVersion": "/^.*-alpha/",
+      "allowedVersions": "/^.*-alpha/",
       "ignoreUnstable": false,
       "respectLatest": false
     }
