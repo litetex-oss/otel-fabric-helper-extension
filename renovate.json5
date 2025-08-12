@@ -28,7 +28,8 @@
       "datasources": [
         "maven"
       ],
-      "ignoreUnstable": false
+      "ignoreUnstable": false,
+      "respectLatest": false
     }
   ]
 }
