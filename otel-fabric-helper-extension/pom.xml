@@ -5,20 +5,20 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>net.litetex</groupId>
-	<artifactId>template-placeholder</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<artifactId>otel-fabric-helper-extension</artifactId>
+	<version>1.0.2-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>template-placeholder</name>
-	<description>template-placeholder</description>
-	<url>https://github.com/litetex-oss/template-placeholder</url>
+	<name>otel-fabric-helper-extension</name>
+	<description>otel-fabric-helper-extension</description>
+	<url>https://github.com/litetex-oss/otel-fabric-helper-extension</url>
 
 	<scm>
-		<url>https://github.com/litetex-oss/template-placeholder</url>
-		<connection>scm:git:https://github.com/litetex-oss/template-placeholder.git</connection>
+		<url>https://github.com/litetex-oss/otel-fabric-helper-extension</url>
+		<connection>scm:git:https://github.com/litetex-oss/otel-fabric-helper-extension.git</connection>
 	</scm>
 
-	<inceptionYear>2023</inceptionYear>
+	<inceptionYear>2025</inceptionYear>
 
 	<developers>
 		<developer>
@@ -29,8 +29,8 @@
 
 	<licenses>
 		<license>
-			<name>Apache-2.0</name>
-			<url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<name>LGPL-3.0-or-later</name>
+			<url>https://www.gnu.org/licenses/lgpl+gpl-3.0.txt</url>
 			<distribution>repo</distribution>
 		</license>
 	</licenses>
@@ -41,7 +41,33 @@
 
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+		<com.google.auto.service.version>1.1.1</com.google.auto.service.version>
 	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>io.opentelemetry.instrumentation</groupId>
+				<artifactId>opentelemetry-instrumentation-bom-alpha</artifactId>
+				<version>2.18.1-alpha</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<dependencies>
+		<dependency>
+			<groupId>io.opentelemetry.javaagent</groupId>
+			<artifactId>opentelemetry-javaagent-extension-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.google.auto.service</groupId>
+			<artifactId>auto-service-annotations</artifactId>
+			<version>${com.google.auto.service.version}</version>
+		</dependency>
+	</dependencies>
 
 	<build>
 		<pluginManagement>
@@ -94,9 +120,13 @@
 				<version>3.14.0</version>
 				<configuration>
 					<release>${maven.compiler.release}</release>
-					<compilerArgs>
-						<arg>-proc:none</arg>
-					</compilerArgs>
+					<annotationProcessorPaths>
+						<path>
+							<groupId>com.google.auto.service</groupId>
+							<artifactId>auto-service</artifactId>
+							<version>${com.google.auto.service.version}</version>
+						</path>
+					</annotationProcessorPaths>
 				</configuration>
 			</plugin>
 			<plugin>
