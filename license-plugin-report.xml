@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<licensePluginReport goal="FORMAT" timestamp="1759261534240">
+    <module artifactId="otel-fabric-helper-extension" groupId="net.litetex" version="1.0.2"/>
+    <files>
+        <file path="src/main/java/net/litetex/otel/ext/fabricmc/KnotClassLoaderInstrumentation.java" result="NOOP"/>
+        <file path="src/main/java/net/litetex/otel/ext/fabricmc/KnotClassLoaderInstrumentationModule.java" result="NOOP"/>
+    </files>
+</licensePluginReport>
