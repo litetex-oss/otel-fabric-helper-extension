@@ -9,7 +9,7 @@ This [OpenTelemetry Agent extension](https://opentelemetry.io/docs/zero-code/jav
 
 _This extension was written to make [OpenTelemetry Instrumentation Extension for Fabric](https://github.com/litetex-oss/mcm-otel-instrumentation-extension) work_
 
-* Ensures that KnotClassLoader correctly detects changes on its classpath
+* Ensures that ``KnotClassLoader`` correctly detects changes on its classpath
     * This ensure that the ``opentelemtry-api`` is correctly injected when a mod is loaded
     * Otherwise only outdated version 1.0/1.4 of the ``opentelemtry-api`` is injected which is incompatible with modern versions of it
 
