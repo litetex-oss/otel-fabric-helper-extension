@@ -50,7 +50,7 @@
 			<dependency>
 				<groupId>io.opentelemetry.instrumentation</groupId>
 				<artifactId>opentelemetry-instrumentation-bom-alpha</artifactId>
-				<version>2.18.1-alpha</version>
+				<version>2.20.1-alpha</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
@@ -117,7 +117,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.14.0</version>
+				<version>3.14.1</version>
 				<configuration>
 					<release>${maven.compiler.release}</release>
 					<annotationProcessorPaths>
@@ -132,7 +132,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-javadoc-plugin</artifactId>
-				<version>3.11.2</version>
+				<version>3.12.0</version>
 				<executions>
 					<execution>
 						<id>attach-javadocs</id>
@@ -171,7 +171,7 @@
 					<plugin>
 						<groupId>org.codehaus.mojo</groupId>
 						<artifactId>flatten-maven-plugin</artifactId>
-						<version>1.7.2</version>
+						<version>1.7.3</version>
 						<configuration>
 							<flattenMode>ossrh</flattenMode>
 						</configuration>
@@ -211,7 +211,7 @@
 					<plugin>
 						<groupId>org.sonatype.central</groupId>
 						<artifactId>central-publishing-maven-plugin</artifactId>
-						<version>0.8.0</version>
+						<version>0.9.0</version>
 						<extensions>true</extensions>
 						<configuration>
 							<publishingServerId>sonatype-central-portal</publishingServerId>
@@ -233,7 +233,7 @@
 							<dependency>
 								<groupId>com.puppycrawl.tools</groupId>
 								<artifactId>checkstyle</artifactId>
-								<version>11.0.0</version>
+								<version>11.1.0</version>
 							</dependency>
 						</dependencies>
 						<configuration>
@@ -260,6 +260,7 @@
 						<artifactId>maven-pmd-plugin</artifactId>
 						<version>3.27.0</version>
 						<configuration>
+							<analysisCache>true</analysisCache>
 							<includeTests>true</includeTests>
 							<printFailingErrors>true</printFailingErrors>
 							<rulesets>
@@ -270,12 +271,12 @@
 							<dependency>
 								<groupId>net.sourceforge.pmd</groupId>
 								<artifactId>pmd-core</artifactId>
-								<version>7.16.0</version>
+								<version>7.17.0</version>
 							</dependency>
 							<dependency>
 								<groupId>net.sourceforge.pmd</groupId>
 								<artifactId>pmd-java</artifactId>
-								<version>7.16.0</version>
+								<version>7.17.0</version>
 							</dependency>
 						</dependencies>
 					</plugin>
