@@ -6,7 +6,7 @@
 
 	<groupId>net.litetex</groupId>
 	<artifactId>otel-fabric-helper-extension</artifactId>
-	<version>1.0.2-SNAPSHOT</version>
+	<version>1.0.3-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>otel-fabric-helper-extension</name>
