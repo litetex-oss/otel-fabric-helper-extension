@@ -25,7 +25,7 @@ jobs:
         distribution: 'temurin'
 
     - name: Try restore Maven Cache
-      uses: actions/cache/restore@v4
+      uses: actions/cache/restore@v5
       with:
         path: ~/.m2/repository
         key: ${{ runner.os }}-mvn-build-${{ hashFiles('**/pom.xml') }}
@@ -178,7 +178,7 @@ jobs:
         distribution: 'temurin'
 
     - name: Try restore Maven Cache
-      uses: actions/cache/restore@v4
+      uses: actions/cache/restore@v5
       with:
         path: ~/.m2/repository
         key: ${{ runner.os }}-mvn-build-${{ hashFiles('**/pom.xml') }}
