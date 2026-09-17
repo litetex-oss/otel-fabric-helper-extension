@@ -54,7 +54,7 @@ public class KnotClassLoaderInstrumentation implements TypeInstrumentation
 			KnotClassLoaderInstrumentation.class.getName() + "$AddUrlAdvice");
 	}
 	
-	@SuppressWarnings({"unused", "PMD.UseUtilityClass"})
+	@SuppressWarnings({"unused", "PMD.InstantiableUtilityClass"})
 	public static class AddUrlAdvice
 	{
 		@Advice.OnMethodExit(suppress = Throwable.class)
